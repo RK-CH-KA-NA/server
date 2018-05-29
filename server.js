@@ -37,10 +37,9 @@ app.use(cors());
  * ENDPOINTS
  */
 
-
-
 //testing request
 app.get('/test', (req, res) => res.send('hello world'))
+
 
 
 
