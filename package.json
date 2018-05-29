@@ -1,0 +1,55 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Codefellows 301 Final Project Youtube Resources",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RK-CH-KA-NA/server.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "Postgres",
+    "Heroku",
+    "Superagent",
+    "PG",
+    "CORS",
+    "SMACCS",
+    "MVC",
+    "Javascript",
+    "HTML",
+    "CSS",
+    "Youtube",
+    "API",
+    "Code",
+    "Fellows",
+    "301",
+    "301d34",
+    "Github",
+    "server",
+    "deployment",
+    "database",
+    "server",
+    "deployment",
+    "channels",
+    "playlists",
+    "iframe"
+  ],
+  "author": "Nathan, Roman, Karina, Chris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RK-CH-KA-NA/server/issues"
+  },
+  "homepage": "https://github.com/RK-CH-KA-NA/server#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "pg": "^7.4.3",
+    "superagent": "^3.8.3"
+  }
+}
