@@ -17,3 +17,5 @@
 
 28 May 2018 12:00pm - Initial Files Setup.
 
+29 May 2018 5:50pm - Initial Structuring of channel-view
+
