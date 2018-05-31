@@ -148,4 +148,4 @@ function loadDB() {
     .catch(console.error);
 }
 
-loadDB();
+// loadDB();
