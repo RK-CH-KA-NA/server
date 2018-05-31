@@ -57,7 +57,7 @@ app.get('/api/v1/playlists/:id', (req, res) => {
     .query({'key': API_KEY})
     .query({'maxResults': 50})
     .query({'playlistId': req.params.id})
-  
+
     .then(response => response.body.items.map(video => {
       let {playlistId, title, description, thumbnails, resourceId} = video.snippet;
       return {
