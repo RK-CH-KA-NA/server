@@ -39,7 +39,7 @@ app.use(cors());
 //DATABASE LOADERS
 
 function loadChannel() {
-  fs.readFile('./channels.json', 'utf8', (err, fd) => {
+  fs.readFile('./data/channels.json', 'utf8', (err, fd) => {
     console.log('channel: ' + fd);
     JSON.parse(fd).forEach(ele => {
       let SQL = 'INSERT INTO channel(channel_id, title, image_url, description) VALUES($1, $2, $3, $4) ON CONFLICT DO NOTHING';
@@ -55,16 +55,16 @@ function loadPlaylists() {
   client.query(SQL)
     .then(result => {
       if (!parseInt(result.rows[0].count)) {
-        fs.readFile('./public/data/playlists.json', 'utf8', (err, fd) => {
+        fs.readFile('./playlists.json', 'utf8', (err, fd) => {
           console.log('playlists: ' + fd);
           JSON.parse(fd).forEach(ele => {
             let SQL = `
               INSERT INTO channel (
                channel_table_id SERIAL PRIMARY KEY,
                channel_id VARCHAR(255) NOT NULL,
-               title VARCHAR (255) NOT NULL,
+               topic VARCHAR (255) NOT NULL,
                description VARCHAR(255) NOT NULL,
-               image_url VARCHAR(255) NOT NULL,
+               category VARCHAR(255) NOT NULL,
 
               );`;
             let values = [ele.playlists_Id, ele.channel_Id, ele.topic, ele.category,];
