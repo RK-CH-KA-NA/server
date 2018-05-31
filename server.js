@@ -38,6 +38,9 @@ app.use(cors());
 
 console.log('before enpoints');
 
+app.get('/api/v1/channels', (req, res) => {
+  res.send('damnflabbit')
+})
 
 app.get('/api/v1/channels', (req, res) => {
   let SQL = 'SELECT * FROM channels;';
