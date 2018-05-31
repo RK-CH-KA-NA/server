@@ -38,7 +38,7 @@ app.use(cors());
 
 console.log('before enpoints');
 
-app.get('/api/v1/channels', (req, res) => {
+app.get('/', (req, res) => {
   res.send('damnflabbit')
 })
 
