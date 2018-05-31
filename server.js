@@ -35,6 +35,10 @@ app.use(cors());
 /**
  * ENDPOINTS
  */
+
+console.log('before enpoints');
+
+
 app.get('/api/v1/channels', (req, res) => {
   let SQL = 'SELECT * FROM channels;';
   client.query(SQL)
