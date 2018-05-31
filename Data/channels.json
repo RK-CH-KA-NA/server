@@ -1,32 +1,62 @@
 [
   {
-    "channel_id":"UCwRXb5dUK4cvsHbx-rGzSgw",
+    "id": "UCwRXb5dUK4cvsHbx-rGzSgw",
     "title": "Derek Banas",
-    "image_url": "https://yt3.ggpht.com/-SN1RQ4kN5bM/AAAAAAAAAAI/AAAAAAAAAAA/T39gSKk4e2g/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
-    "description": "C#, Javascript, Java, Python, SQL, NodeJS"
+    "url": "https://yt3.ggpht.com/-SN1RQ4kN5bM/AAAAAAAAAAI/AAAAAAAAAAA/T39gSKk4e2g/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
   },
+
   {
-    "channel_id":"UCwRXb5dUK4cvsHbx-rGzSgw",
-    "title": "Derek Banas",
-    "image_url": "https://yt3.ggpht.com/-SN1RQ4kN5bM/AAAAAAAAAAI/AAAAAAAAAAA/T39gSKk4e2g/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
-    "description": "C#, Javascript, Java, Python, SQL, NodeJS"
+    "id": "UCvjgXvBlbQiydffZU7m1_aw",
+    "title": "The Coding Train",
+    "url": "https://yt3.ggpht.com/-1rYs64e24jQ/AAAAAAAAAAI/AAAAAAAAAAA/B2LPB2yW030/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
   },
+
   {
-    "channel_id":"UCwRXb5dUK4cvsHbx-rGzSgw",
-    "title": "Derek Banas",
-    "image_url": "https://yt3.ggpht.com/-SN1RQ4kN5bM/AAAAAAAAAAI/AAAAAAAAAAA/T39gSKk4e2g/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
-    "description": "C#, Javascript, Java, Python, SQL, NodeJS"
+    "id": "UCO1cgjhGzsSYb1rsB4bFe4Q",
+    "title": "Fun Fun Function",
+    "url": "https://yt3.ggpht.com/-5ny40r8qe90/AAAAAAAAAAI/AAAAAAAAAAA/IrloZ_OeiYc/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
   },
+
   {
-    "channel_id":"UCwRXb5dUK4cvsHbx-rGzSgw",
-    "title": "Derek Banas",
-    "image_url": "https://yt3.ggpht.com/-SN1RQ4kN5bM/AAAAAAAAAAI/AAAAAAAAAAA/T39gSKk4e2g/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
-    "description": "C#, Javascript, Java, Python, SQL, NodeJS"
+    "id": "UCyIe-61Y8C4_o-zZCtO4ETQ",
+    "title": "DevTips",
+    "url": "https://yt3.ggpht.com/-5aj55jp4Jm8/AAAAAAAAAAI/AAAAAAAAAAA/aMg0g6GjNJ8/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
   },
+
   {
-    "channel_id":"UCwRXb5dUK4cvsHbx-rGzSgw",
-    "title": "Derek Banas",
-    "image_url": "https://yt3.ggpht.com/-SN1RQ4kN5bM/AAAAAAAAAAI/AAAAAAAAAAA/T39gSKk4e2g/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
-    "description": "C#, Javascript, Java, Python, SQL, NodeJS"
+    "id": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "The Net Ninja",
+    "url": "https://yt3.ggpht.com/--JVzzRDG2ME/AAAAAAAAAAI/AAAAAAAAAAA/Q-LECA0Cxb8/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+  },
+
+  {
+    "id": "UCVTlvUkGslCV_h-nSAId8Sw",
+    "title": "LearnCode.academy",
+    "url": "https://yt3.ggpht.com/-mW8hwFBRUNs/AAAAAAAAAAI/AAAAAAAAAAA/jVL9TZ64o7A/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+  },
+
+  {
+    "id": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "Traversy Media",
+    "url": "https://yt3.ggpht.com/-OsgBxXITFdg/AAAAAAAAAAI/AAAAAAAAAAA/gDaUV_aSb2Q/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+  },
+
+  {
+    "id": "UCcabW7890RKJzL968QWEykA",
+    "title": "CS50",
+    "url": "https://yt3.ggpht.com/-NLNsIL5GXYw/AAAAAAAAAAI/AAAAAAAAAAA/grAtLVgbRZ0/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+  },
+
+
+  {
+    "id": "UCyU5wkjgQYGRB0hIHMwm2Sg",
+    "title": "LevelUpTuts",
+    "url": "https://yt3.ggpht.com/-MogFBYbYHgM/AAAAAAAAAAI/AAAAAAAAAAA/8e-NkR3Q1LE/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+  },
+
+  {
+    "id": "UCJbPGzawDH1njbqV-D5HqKw",
+    "title": "thenewboston",
+    "url": "https://yt3.ggpht.com/--n5ELY2uT-U/AAAAAAAAAAI/AAAAAAAAAAA/d9JvaIEpstw/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
   }
 ]

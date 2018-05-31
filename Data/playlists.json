@@ -1,9 +1,703 @@
 [
   {
-    "channel_id":"UCwRXb5dUK4cvsHbx-rGzSgw",
-    "playlist_id":"PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a",
-    "title": "React JS / Redux Tutorials",
-    "image_url": "https://i.ytimg.com/vi/DiLVAXlVYR0/sddefault.jpg",
-    "description": "Official React JS / Redux tutorials from thenewboston!"
+    "id": "PLGLfVvz_LVvQ9S8YSV0iDsuEU8v11yP9M",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "C++ Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/SKV0npCFxFs/mqdefault.jpg",
+    "tags": "C++,NetBeans"
+  },
+
+  {
+    "id": "PLGLfVvz_LVvTr9wMK6f9lTzOzSX6a6Pk-",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "Visual Basic Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/gjU-JEY0gRc/mqdefault.jpg",
+    "tags": "Visual Basic"
+  },
+
+  {
+    "id": "PLGLfVvz_LVvSMqZiTTsAC7C8Ypp81Jt6D",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "Django Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/Wm8Eq0HIISA/mqdefault.jpg",
+    "tags": "Python,Django"
+  },
+
+  {
+    "id": "PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "Learn to Program",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/swQEbZ6ez1I/mqdefault.jpg",
+    "tags": "Python"
+  },
+
+  {
+    "id": "PLGLfVvz_LVvSpxyVx5XcprEgvhJ1BzruD",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "NodeJS Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/-0X8mr6Q8Ew/mqdefault.jpg",
+    "tags": "NodeJS,Express,MongoDB,AngularJS"
+  },
+
+  {
+    "id": "PLGLfVvz_LVvSj3Nn_zeqWFnBusqvsjMqF",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "TkInter Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/Mim5tTSf05E/mqdefault.jpg",
+    "tags": "Python"
+  },
+
+  {
+    "id": "PLE7E8B7F4856C9B19",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "Java Video Tutorial",
+    "description": "Massive Java Video Tutorial : Java, Java Tutorial, java video tutorials, java video, java tutorials video, beginner java tutorial",
+    "url": "https://i.ytimg.com/vi/yYN8u90MKCg/mqdefault.jpg",
+    "tags": "Java"
+  },
+
+  {
+    "id": "PLGLfVvz_LVvT59FVZJeJtVUr3h7PluW6Q",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "How to Layout a Website",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/sEm35_PPpKU/mqdefault.jpg",
+    "tags": "HTML,CSS,Web Layouts"
+  },
+
+  {
+    "id": "PLGLfVvz_LVvQHO1PfyscjIPkNJjgHsLyH",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "Git Video Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/EYIvWWx1YDw/mqdefault.jpg",
+    "tags": "Git"
+  },
+
+  {
+    "id": "PLE0071B4091E8948D",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "AJAX Tutorial",
+    "description": "Ajax is an approach to using HTML, JavaScript, DHTML, and the DOM. It allows you to create interactive AJAX applications. When Ajax is implemented with JQuery, you dramatically decrease the complications of implementing AJAX techniques.",
+    "url": "https://i.ytimg.com/vi/fiHh9QfLgj4/mqdefault.jpg",
+    "tags": "AJAX,HTML,Javascript"
+  },
+
+  {
+    "id": "PLD78C50F75867737A",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "CSS Tutorial",
+    "description": "I teach you everything about CSS. Here we cover every single property available for styling HTML with Cascading Style Sheets.",
+    "url": "https://i.ytimg.com/vi/3VPkaXEbaNU/mqdefault.jpg",
+    "tags": "CSS"
+  },
+
+  {
+    "id": "PL2C3A4D7B390C0BBE",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "HTML Tutorial",
+    "description": "Here I'll teach you everything there is to know about html w3c. I'll show you every html tag and how they work.",
+    "url": "https://i.ytimg.com/vi/7jTEhkDPF_0/mqdefault.jpg",
+    "tags": "HTML"
+  },
+
+  {
+    "id": "PLD24796EE3EF0707D",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "SQL Tutorial",
+    "description": "Here I explain what SQL is & show many statements in sql. I explain what a database is, what SQL is, explain RDMS, show you how to create a table and explain every SQL Data Type.",
+    "url": "https://i.ytimg.com/vi/exez1RmGe6s/mqdefault.jpg",
+    "tags": "SQL"
+  },
+  
+  {
+    "id": "PLD6B481461BE08452",
+    "channelId": "UCwRXb5dUK4cvsHbx-rGzSgw",
+    "title": "JavaScript Tutorial",
+    "description": "Javascripts Free Scripting Tutorial will completely cover the capabilities of Javascript. Javascript is a scripting language that makes your website interactive",
+    "url": "https://i.ytimg.com/vi/kL1hgNGDPHg/mqdefault.jpg",
+    "tags": "Javascript"
+  },
+
+  {
+    "id": "PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx",
+    "channelId": "UCvjgXvBlbQiydffZU7m1_aw",
+    "title": "JavaScript Promises",
+    "description": "Intro to asynchronous programming in JavaScript with Promises and \"async/await\"",
+    "url": "https://i.ytimg.com/vi/AwyoVjVXnLk/mqdefault.jpg",
+    "tags": "Javascript,Promises,Async"
+  },
+
+  {
+    "id": "PLRqwX-V7Uu6aAEUqu96Newc-7qpuh-cxc",
+    "channelId": "UCvjgXvBlbQiydffZU7m1_aw",
+    "title": "Array Functions in JavaScript",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/EnYlhbpzhU4/mqdefault.jpg",
+    "tags": "Arrays,Functions,Javascript"
+  },
+
+  {
+    "id": "PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA",
+    "channelId": "UCvjgXvBlbQiydffZU7m1_aw",
+    "title": "1-7: Foundations of Programming in JavaScript - p5.js Tutorial",
+    "description": "This series covers all the basics concepts of programming in the context of p5.js and canvas animation.  Part 2 covers HTML, CSS, and DOM.\n\nPart 2: https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bI1SlcCRfLH79HZrFAtBvX\n\nhttp://twitter.com/shiffman",
+    "url": "https://i.ytimg.com/vi/HZ4D3wDRaec/mqdefault.jpg",
+    "tags": "Javascript,p5,HTML,CSS"
+  },
+
+  {
+    "id": "PLRqwX-V7Uu6bI1SlcCRfLH79HZrFAtBvX",
+    "channelId": "UCvjgXvBlbQiydffZU7m1_aw",
+    "title": "8: HTML / CSS / DOM - p5.js Tutorial",
+    "description": "This is part 2 of the Learning p5.js series.\n\nPart 1: https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA\n\nContact: http://twitter.com/shiffman/",
+    "url": "https://i.ytimg.com/vi/lAtoaRz78I4/mqdefault.jpg",
+    "tags": "HTML,CSS"
+  },
+
+  {
+    "id": "PL0zVEGEvSaeG2T5n8FuPGb11JHea7idb9",
+    "channelId": "UCO1cgjhGzsSYb1rsB4bFe4Q",
+    "title": "Iterators and Generators in JavaScript",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/QOnUcU8U_XE/mqdefault.jpg",
+    "tags": "Javascript,Functions"
+  },
+
+  {
+    "id": "PL0zVEGEvSaeHJppaRLrqjeTPnCH6vw-sm",
+    "channelId": "UCO1cgjhGzsSYb1rsB4bFe4Q",
+    "title": "Must-know JavaScript Features",
+    "description": "In this video series, we learn about specific JavaScript functionality that I think is really important to know how it works. Generally deep dives.",
+    "url": "https://i.ytimg.com/vi/FKRVqtP8o48/mqdefault.jpg",
+    "tags": "Javascript"
+  },
+
+  {
+    "id": "PL0zVEGEvSaeF_zoW9o66wa_UCNE3a7BEr",
+    "channelId": "UCO1cgjhGzsSYb1rsB4bFe4Q",
+    "title": "Unit testing in Javascript",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/XsFQEUP1MxI/mqdefault.jpg",
+    "tags": "Javascript,Testing"
+  },
+
+  {
+    "id": "PLqGj3iMvMa4I-Ee7CLCNKnCLMsaO7Kllf",
+    "channelId": "UCyIe-61Y8C4_o-zZCtO4ETQ",
+    "title": "Regular Expressions Series",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/VrT3TRDDE4M/mqdefault.jpg",
+    "tags": "REGEX,Javascript"
+  },
+
+  {
+    "id": "PLqGj3iMvMa4LvJ8VctoXnPI0dtE40wfid",
+    "channelId": "UCyIe-61Y8C4_o-zZCtO4ETQ",
+    "title": "CSS Animations Series",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/f1WMjDx4snI/mqdefault.jpg",
+    "tags": "CSS"
+  },
+
+  {
+    "id": "PLqGj3iMvMa4KOekRWjjajinzlRK879Ksn",
+    "channelId": "UCyIe-61Y8C4_o-zZCtO4ETQ",
+    "title": "Learn jQuery in 15 minutes",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/v-RC3kJCL4c/mqdefault.jpg",
+    "tags": "Javascript,jQuery"
+  },
+
+  {
+    "id": "PLqGj3iMvMa4LFz8DZ0t-89twnelpT4Ilw",
+    "channelId": "UCyIe-61Y8C4_o-zZCtO4ETQ",
+    "title": "GitHub for Noobs",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/_ALeswWzpBo/mqdefault.jpg",
+    "tags": "Github"
+  },
+
+  {
+    "id": "PLqGj3iMvMa4KXCYyFCQnC2ZNmZyoMAj8L",
+    "channelId": "UCyIe-61Y8C4_o-zZCtO4ETQ",
+    "title": "Design & Code a Mobile First Landing Page!",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/ZRb1BQnV9G4/mqdefault.jpg",
+    "tags": "HTML,CSS,Mobile-first,jQuery,Javascript"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "Object Oriented JavaScript",
+    "description": "Hey gang, in this series we'll take a look at objects in JavaScript, and how we can use them to structure our programs. We'll talk about object literals, classes, inheritance,  prototypes and more :).",
+    "url": "https://i.ytimg.com/vi/7d9H34ZVRPg/mqdefault.jpg",
+    "tags": "Javascript,OOP"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "Regular Expressions (RegEx) Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/uaepGvA-iK4/mqdefault.jpg",
+    "tags": "REGEX"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "CSS Variables Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/BQEo8uPGFPE/mqdefault.jpg",
+    "tags": "CSS"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "Django Tutorial (Create a Blog)",
+    "description": "Hey gang, in this Django tutorial series, I'll take you right from the start - installing django and setting up a project, right through to creating a blog with user authentication.",
+    "url": "https://i.ytimg.com/vi/jAE94gzgQvI/mqdefault.jpg",
+    "tags": "Python,Django"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9htzG9o-QzCTsGMbmfuF4kk",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "CSS Tips & Tricks",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/SAzEs6JjSoQ/mqdefault.jpg",
+    "tags": "CSS"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "CSS Grid Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/d-MHl_Q_hp8/mqdefault.jpg",
+    "tags": "CSS,Grid"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "JavaScript DOM Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/t90K6HExEJo/mqdefault.jpg",
+    "tags": "Javascript"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9idu6GZ8EU_5B6WpKTdYZbK",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "Python 3 Tutorial for Beginners",
+    "description": "Hey gang, in this Python 3 tutorial series, I'll walk you from the very basics of Python (how to install, the python shell, data types etc) right through to creating your very own Python programs.",
+    "url": "https://i.ytimg.com/vi/SbQAAuom-GA/mqdefault.jpg",
+    "tags": "Python"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "Git & GitHub Tutorial for Beginners",
+    "description": "Hey gang, in this Git & GitHub tutorial series I'll explain why you need to be using Git & GitHub in your development workflow and how to do it from the ground up.",
+    "url": "https://i.ytimg.com/vi/MFtsLRphqDM/mqdefault.jpg",
+    "tags": "Git,Github"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "REST API Tutorials (Node, Express & Mongo)",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/A5fiWcVcADw/mqdefault.jpg",
+    "tags": "REST,API,Express,NodeJS,MongoDB"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "MongoDB Tutorial for Beginners",
+    "description": "Hey ninjas, in this MongoDB Tutorial series, I'll teach you all of the basics of MongoDB, including how to install and connect to MongoDB on your local computer as well as create, read, update and delete data.\n\nWe'll also learn a little bit about Mocha testing on the way!",
+    "url": "https://i.ytimg.com/vi/wLNL2HTvcVw/mqdefault.jpg",
+    "tags": "MongoDB"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9g5_p_BVUGWykHfqx6bb7qK",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "Styling a HTML5 Form",
+    "description": "Yo ninjas, in this playlist, we'll learn how to style up a HTML 5 form using various different CSS techniques - including how to style check boxes, radio buttons, select boxes and text inputs...",
+    "url": "https://i.ytimg.com/vi/hOU4Aqci2zs/mqdefault.jpg",
+    "tags": "HTML,FORMS"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "Asynchronous JavaScript Tutorial",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/h0ZUpPiV1ac/mqdefault.jpg",
+    "tags": "Javascript,ASYNC"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "Node JS Tutorial for Beginners",
+    "description": "Yo ninjas, in this Node JS tutorial series for beginners, we'll be walking step by step through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
+    "url": "https://i.ytimg.com/vi/1US-P13yKVs/mqdefault.jpg",
+    "tags": "NodeJS"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "CSS Animation Tutorial",
+    "description": "Hey gang, in this tutorial series, I'll be taking you from newbie to ninja in the world of CSS Animation. We'll start with the basics, including keyframes, transforms and the animation property, and build our way up to some pretty cool CSS animation examples you can try out on your own websites.",
+    "url": "https://i.ytimg.com/vi/PH35-BDak0M/mqdefault.jpg",
+    "tags": "CSS"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9gdqHxcUgGhl_cV6xET1_0N",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "JavaScript Tips & Tricks",
+    "description": "Yo ninjas, in this tutorialseries, I'll be showing you a collection of cool tricks we can pull off with JavaScript and jQuery. This goes beyond the basics of the JavaScript language and explores some of the cooler things we can do with it :).",
+    "url": "https://i.ytimg.com/vi/9bOlAFoFy0A/mqdefault.jpg",
+    "tags": "Javascript"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "JavaScript ES6 Tutorials",
+    "description": "Yo ninjas, in this Ecmascript 6 tutorial, I'll walk you through some of the new features available to us when using JavaScript - generators, constants, the let keyword, template strings and more...",
+    "url": "https://i.ytimg.com/vi/gVJyJlJOij8/mqdefault.jpg",
+    "tags": "Javascript,ES6"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9hNUJ0j6ccnOAcJIPoTRpO4",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "jQuery Tutorials for Beginners",
+    "description": "Go from zero to ninja in jQuery in this complete beginners jQuery tutorial playlist. First we'll take a look at how to load jQuery into our documents, then dive straight in to all of the great features it offers us as JavaScript developers to make our life much more simple!",
+    "url": "https://i.ytimg.com/vi/hcO4JsLsvqg/mqdefault.jpg",
+    "tags": "jQuery"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "CSS Positioning Tutorials",
+    "description": "Hey ninjas, in these CSS positioning tutorials, I'll show you the best methods by which to position content on your web pages using CSS. We'll go from looking at normal document flow,  through to floats and the position property in CSS. Sign up here for CSS positioning wizardary.",
+    "url": "https://i.ytimg.com/vi/d601NaSSqSE/mqdefault.jpg",
+    "tags": "CSS"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9g9Vh9MAA-XKnfJsWZnPZFw",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "Responsive Web Design Tutorials",
+    "description": "Yo gang, in this responsive design tutorial playlist I'll be teaching you all the core essentials of responsive development that you'll need to go on and make mobile-friendly sites. We'll be looking at the view-port, media queries, drop-down menu's and responsive images - plus making our own website responsive too. Go from zero to ninja in responsive design within 12 tutorials :).",
+    "url": "https://i.ytimg.com/vi/MnjOcfL3agQ/mqdefault.jpg",
+    "tags": "RWD,Mobile-first"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "JavaScript Tutorials for Beginners",
+    "description": "Go from zero to ninjas in this JavaScript for Beginners complete tutorial playlist. In this playlist we'll start with the basics - what is JavaScript, how do we use it, variables, arrays and control flow. Then we'll crank it up a notch and talk about slightly more advanced JavaScript topics such as Objects and Event handling. Finally we'll look at a few JS Libraries and where to look next to further your study!",
+    "url": "https://i.ytimg.com/vi/VB7y0yxZjro/mqdefault.jpg",
+    "tags": "Javascript"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "CSS Tutorials For Beginners",
+    "description": "Hey Ninjas, if you've learned enough HTML to make simple websites, your next step is to jump head first into this CSS tutorial for beginners series. CSS stands for Cascading Style Sheets, and is the primary method of adding design to your HTML pages. In this course we'll be black-belting our way through CSS core concepts such as formatting text, headers and links; positioning content on a web page using CSS positioning techniques, adding colour and backgrounds to our elements and much more...\n\nFor more front-end web tutorials visit The Net Ninja channel at https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg\nFor the HTML Basics course visit https://www.youtube.com/playlist?list=PL4cUxeGkcC9ibZ2TSBaGGNrgh4ZgYE6Cc",
+    "url": "https://i.ytimg.com/vi/4BEyFVufmM8/mqdefault.jpg",
+    "tags": "CSS"
+  },
+
+  {
+    "id": "PL4cUxeGkcC9ibZ2TSBaGGNrgh4ZgYE6Cc",
+    "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+    "title": "HTML Tutorials For Beginners",
+    "description": "If you're new to web design / development & don't know where to start, HTML is the perfect place. HTML and CSS together form the building blocks with which to create websites and other more complex applications. In this course we'll cover everything you need to know to create a simple website from start to finish. Join me, ninja fledglings, en-route to become an ultimate HTML ninja :).",
+    "url": "https://i.ytimg.com/vi/cZCq8lQ-vZ0/mqdefault.jpg",
+    "tags": "HTML"
+  },
+
+  {
+    "id": "PLoYCgNOIyGADZuvKJweutZDOO9VI9YiJ9",
+    "channelId": "UCVTlvUkGslCV_h-nSAId8Sw",
+    "title": "Vue.js Tutorials",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/h6lhOYv-QM4/mqdefault.jpg",
+    "tags": "Vue.js"
+  },
+
+  {
+    "id": "PLoYCgNOIyGADILc3iUJzygCqC8Tt3bRXt",
+    "channelId": "UCVTlvUkGslCV_h-nSAId8Sw",
+    "title": "Redux Tutorials",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/9M-r8p9ey8U/mqdefault.jpg",
+    "tags": "React,Redux,Javascript"
+  },
+
+  {
+    "id": "PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b",
+    "channelId": "UCVTlvUkGslCV_h-nSAId8Sw",
+    "title": "React JS Tutorials",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/fd2Cayhez58/mqdefault.jpg",
+    "tags": "React,Javascript"
+  },
+
+  {
+    "id": "PLoYCgNOIyGACDQLaThEEKBAlgs4OIUGif",
+    "channelId": "UCVTlvUkGslCV_h-nSAId8Sw",
+    "title": "ES6",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/LmL0Gh193M0/mqdefault.jpg",
+    "tags": "Javascript,ES6"
+  },
+
+  {
+    "id": "PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f",
+    "channelId": "UCVTlvUkGslCV_h-nSAId8Sw",
+    "title": "Modular Javascript",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/m-NYyst_tiY/mqdefault.jpg",
+    "tags": "Javascript,ModularJS"
+  },
+
+  {
+    "id": "PLoYCgNOIyGACEvLxZSD0YSrxKwfgnnkD9",
+    "channelId": "UCVTlvUkGslCV_h-nSAId8Sw",
+    "title": "Angular Tutorials - Angular.js Javascript Framework",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/0r5QvzjjKDc/mqdefault.jpg",
+    "tags": "Javascript,AngularJS"
+  },
+
+  {
+    "id": "PLoYCgNOIyGAACzU6GliHJDp4kmOw3NFsh",
+    "channelId": "UCVTlvUkGslCV_h-nSAId8Sw",
+    "title": "Node.js Tutorials",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/0J82QOHX8lQ/mqdefault.jpg",
+    "tags": "Javascript,NodeJS"
+  },
+
+  {
+    "id": "PLillGF-RfqbYeckUaD1z6nviTp31GLTH8",
+    "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "Web Development Crash Courses",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/z6hQqgvGI4Y/mqdefault.jpg",
+    "tags": "AngularJS,VueJS,NodeJS,Python,React,MongoDB,Express,Typescript,React,SQL,HTML,CSS,AJAX,Flexbox,NPM"
+  },
+
+  {
+    "id": "PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU",
+    "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "HTML & CSS",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/yfoY53QXEnI/mqdefault.jpg",
+    "tags": "HTML,CSS"
+  },
+
+  {
+    "id": "PLillGF-RfqbZ_7QHHWnrhZW1NNoFzTtUp",
+    "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "Node.js & Pusher Real Time Polling App",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/DrIiWAnxXYs/mqdefault.jpg",
+    "tags": "NodeJS,Javascript"
+  },
+
+  {
+    "id": "PLillGF-RfqbYE6Ik_EuXA2iZFcE082B3s",
+    "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "JavaScript DOM Crash Course",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/mPd2aJXCZ2g/mqdefault.jpg",
+    "tags": "Javascript,DOM"
+  },
+
+  {
+    "id": "PLillGF-RfqbYRpji8t4SxUkMxfowG4Kqp",
+    "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "Node.js & Express From Scratch",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/sB3acNJeNKE/mqdefault.jpg",
+    "tags": "Javascript,NodeJS,Express"
+  },
+
+  {
+    "id": "PLillGF-RfqbaEmlPcX5e_ejaK7Y5MydkW",
+    "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "Node.js & PostgreSQL Recipe App",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/EBw5E5DzAvE/mqdefault.jpg",
+    "tags": "Javascript,NodeJS,PostgreSQL,SQL"
+  },
+
+  {
+    "id": "PLillGF-RfqbbqvbObyE7CldS5-trkefnB",
+    "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "Node.js & Passport Login System",
+    "description": "In this series we will create a user login and registration system from scratch. We will also implement access control and a Twitter Bootstrap UI",
+    "url": "https://i.ytimg.com/vi/OnuC3VtEQks/mqdefault.jpg",
+    "tags": "Javascript,NodeJS"
+  },
+
+  {
+    "id": "PLillGF-RfqbYLBAkywyB2cCy8y87GAket",
+    "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "Restful API  - Node, Express and Angular",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/qrIvv6OTN2Y/mqdefault.jpg",
+    "tags": "Javascript,AngularJS,NodeJS,Express,REST"
+  },
+
+  {
+    "id": "PLillGF-RfqbbKWfm3Y_RF57dNGsHnkYqO",
+    "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+    "title": "Learning React.js",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/euSbXxCf88I/mqdefault.jpg",
+    "tags": "Javascript,React"
+  },
+
+  {
+    "id": "PLhQjrBD2T382gdfveyad09Ierl_3Jh_wR",
+    "channelId": "UCcabW7890RKJzL968QWEykA",
+    "title": "CS50's Mobile App Development with React Native",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/X52b-8y2Hf4/mqdefault.jpg",
+    "tags": "Mobile-first,React"
+  },
+
+  {
+    "id": "PLhQjrBD2T382hIW-IsOVuXP1uMzEvmcE5",
+    "channelId": "UCcabW7890RKJzL968QWEykA",
+    "title": "CS50's Web Programming with Python and JavaScript",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/1u2qu-EmIRc/mqdefault.jpg",
+    "tags": "Python,Javascript"
+  },
+
+  {
+    "id": "PLLnpHn493BHHhCVlCRhAMpeFwDH2BTE3p",
+    "channelId": "UCyU5wkjgQYGRB0hIHMwm2Sg",
+    "title": "How To Make Your First Website",
+    "description": "In this tutorial series, you will learn how to create your very first website using modern techniques.",
+    "url": "https://i.ytimg.com/vi/Pq08fNMOn7s/mqdefault.jpg",
+    "tags": "HTML,CSS"
+  },
+
+  {
+    "id": "PLLnpHn493BHHaNoYGCxk1L6Y1DtkY4IOz",
+    "channelId": "UCyU5wkjgQYGRB0hIHMwm2Sg",
+    "title": "VueJS For Everyone Preview",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/X-4BEPiZI2U/mqdefault.jpg",
+    "tags": "VueJS"
+  },
+
+  {
+    "id": "PLLnpHn493BHERo-R15Q-DPTuM2Ts2Jx_s",
+    "channelId": "UCyU5wkjgQYGRB0hIHMwm2Sg",
+    "title": "Essential Skills JavaScript",
+    "description": "",
+    "url": "https://i.ytimg.com/vi/K5_B737B9l0/mqdefault.jpg",
+    "tags": "Javascript"
+  },
+
+  {
+    "id": "PLLnpHn493BHGlqEn4EE7dRUnPn4o_tKM0",
+    "channelId": "UCyU5wkjgQYGRB0hIHMwm2Sg",
+    "title": "HTML5 Tutorials",
+    "description": "Learn all about HTML 5. What makes it different from previous versions of HTML and how you can include the new elements and techniques into your workflow.",
+    "url": "https://i.ytimg.com/vi/sfLBWj5lPgA/mqdefault.jpg",
+    "tags": "HTML"
+  },
+
+  {
+    "id": "PLLnpHn493BHH6DkHPhduhco5XavNA9JaD",
+    "channelId": "UCyU5wkjgQYGRB0hIHMwm2Sg",
+    "title": "CSS Tutorials",
+    "description": "Take control of the visual style of your website with CSS. Starting at the very basics for beginners, Level Up Tuts will show you everything you need to know about CSS.",
+    "url": "https://i.ytimg.com/vi/14JFxpPQC0Q/mqdefault.jpg",
+    "tags": "CSS"
+  },
+
+  {
+    "id": "PL6gx4Cwl9DGBuKtLgPR_zWYnrwv-JllpA",
+    "channelId": "UCJbPGzawDH1njbqV-D5HqKw",
+    "title": "React JS Tutorials for Beginners",
+    "description": "Official playlist for thenewboston React JS Tutorials for Beginners!",
+    "url": "https://i.ytimg.com/vi/2NLgQMs2hOw/mqdefault.jpg",
+    "tags": "React"
+  },
+
+  {
+    "id": "PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx",
+    "channelId": "UCJbPGzawDH1njbqV-D5HqKw",
+    "title": "Git Tutorials Playlist",
+    "description": "thenewboston Official Git Tutorials Playlist",
+    "url": "https://i.ytimg.com/vi/yDntCIs-IJM/mqdefault.jpg",
+    "tags": "Git"
+  },
+
+  {
+    "id": "PL6gx4Cwl9DGA8Vys-f48mAH9OKSUyav0q",
+    "channelId": "UCJbPGzawDH1njbqV-D5HqKw",
+    "title": "Python Web Crawler Tutorials",
+    "description": "Official playlist for thenewboston Python Web Crawler Tutorials.",
+    "url": "https://i.ytimg.com/vi/z_vIWoTZm2E/mqdefault.jpg",
+    "tags": "Python"
+  },
+
+  {
+    "id": "PL6gx4Cwl9DGCkg2uj3PxUWhMDuTw3VKjM",
+    "channelId": "UCJbPGzawDH1njbqV-D5HqKw",  
+    "title": "Linux Tutorial for Beginners Playlist",
+    "description": "Official playlist for thenewboston Linux for Beginners tutorials!",
+    "url": "https://i.ytimg.com/vi/Z40N7b9NHTE/mqdefault.jpg",
+    "tags": "Linux"
+  },
+
+  {
+    "id": "PL6gx4Cwl9DGD3PLy3DZHr6-LpCY7irPU8",
+    "channelId": "UCJbPGzawDH1njbqV-D5HqKw",
+    "title": "Foundation for Responsive Web Design for Beginners",
+    "description": "Official playlist for thenewboston Foundation for Responsive Web Design tutorials!",
+    "url": "https://i.ytimg.com/vi/8kVbTQAaFSg/mqdefault.jpg",
+    "tags": "RWD,Mobile-first"
+  },
+
+  {
+    "id": "PL27BCE863B6A864E3",
+    "channelId": "UCJbPGzawDH1njbqV-D5HqKw",
+    "title": "Java (Intermediate) Tutorials",
+    "description": "Once you have mastered the basics, you are ready to move on!",
+    "url": "https://i.ytimg.com/vi/Qi09pWsc7nA/mqdefault.jpg",
+    "tags": "Java"
   }
 ]
