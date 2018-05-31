@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /**
  * DEPENDENCIES
@@ -7,9 +7,7 @@ const pg = require('pg');
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
-
-
-//const superagent = require('superagent');
+const superagent = require('superagent');
 
 /**
  * APPLICATION
@@ -20,13 +18,11 @@ const PORT = process.env.PORT || 3000;
 /**
  * API KEY
  */
-//const API_KEY = process.env.YOUTUBE_KEY; //YOUTUBE_KEY, YOUTUBE_KEY2
+const API_KEY = process.env.YOUTUBE_KEY; //YOUTUBE_KEY, YOUTUBE_KEY2
 
 /**
  * DATABASE
  */
-// const WINDOWSconString = 'postgres://postgres:password@localhost:5432/postgres';
-//const MACconString = 'postgres://localhost:5432/fellow_code';
 const client = new pg.Client(process.env.DATABASE_URL);
 client.connect();
 client.on('error', err => console.error(err));
@@ -36,14 +32,63 @@ client.on('error', err => console.error(err));
  */
 app.use(cors());
 
-//DATABASE LOADERS
+/**
+ * ENDPOINTS
+ */
+app.get('/api/v1/channels', (req, res) => {
+  let SQL = 'SELECT * FROM channels;';
+  client.query(SQL)
+    .then(response => res.send(response.rows))
+    .catch(console.error);
+});
 
-function loadChannel() {
+app.get('/api/v1/channels/:id', (req, res) => {
+  let SQL = 'SELECT * FROM playlists WHERE channel_id=$1;';
+  let values = [req.params.id];
+  client.query(SQL, values)
+    .then(response => res.send(response.rows))
+    .catch(console.error);
+});
+
+app.get('/api/v1/playlists/:id', (req, res) => {
+  let url = 'https://www.googleapis.com/youtube/v3/playlistItems';
+  superagent.get(url)
+    .query({'part': 'snippet'})
+    .query({'key': API_KEY})
+    .query({'maxResults': 50})
+    .query({'playlistId': req.params.id})
+  
+    .then(response => response.body.items.map(video => {
+      let {playlistId, title, description, thumbnails, resourceId} = video.snippet;
+      return {
+        playlistId: playlistId,
+        title: title,
+        description: description,
+        url: thumbnails.medium.url,
+        videoId: resourceId.videoId,
+      }
+    }))
+    .then(bundle => res.send(bundle))
+    .catch(console.error)
+});
+
+
+//Catch Request
+app.get('*', (req, res) => res.status(403).send('Whoops...'));
+
+/**
+ * LISTENER
+ */
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
+
+/**
+ * Database Loaders
+ */
+function loadChannels() {
   fs.readFile('./data/channels.json', 'utf8', (err, fd) => {
-    console.log('channel: ' + fd);
     JSON.parse(fd).forEach(ele => {
-      let SQL = 'INSERT INTO channel(channel_id, title, image_url, description) VALUES($1, $2, $3, $4) ON CONFLICT DO NOTHING';
-      let values = [ele.channel_id, ele.title, ele.image_url, ele.description];
+      let SQL = 'INSERT INTO channels VALUES($1, $2, $3) ON CONFLICT DO NOTHING';
+      let values = [ele.id, ele.title, ele.url];
       client.query(SQL, values)
         .catch(console.error);
     })
@@ -51,98 +96,49 @@ function loadChannel() {
 }
 
 function loadPlaylists() {
-  let SQL = 'SELECT COUNT(*) FROM playlists';
+  let SQL = 'SELECT COUNT(*) FROM playlists;';
   client.query(SQL)
     .then(result => {
-      if (!parseInt(result.rows[0].count)) {
-        fs.readFile('./playlists.json', 'utf8', (err, fd) => {
-          console.log('playlists: ' + fd);
+      if(!parseInt(result.rows[0].count)) {
+        fs.readFile('./data/playlists.json', 'utf8', (err, fd) => {
           JSON.parse(fd).forEach(ele => {
-            let SQL = `
-              INSERT INTO channel (
-               channel_table_id SERIAL PRIMARY KEY,
-               channel_id VARCHAR(255) NOT NULL,
-               topic VARCHAR (255) NOT NULL,
-               description VARCHAR(255) NOT NULL,
-               category VARCHAR(255) NOT NULL,
-
-              );`;
-            let values = [ele.playlists_Id, ele.channel_Id, ele.topic, ele.category,];
+            let SQL = 'INSERT INTO playlists VALUES ($1, $2, $3, $4, $5, $6) ON CONFLICT DO NOTHING;';
+            let values = [ele.id, ele.channelId, ele.title, ele.description, ele.url, ele.tags];
             client.query(SQL, values)
-              .catch(console.error);
+              .catch(console.err);
           })
         })
       }
     })
 }
 
-
 function loadDB() {
   client.query(`
     CREATE TABLE IF NOT EXISTS
-    channel (
-      channel_table_id SERIAL PRIMARY KEY,
-      channel_id VARCHAR(255) NOT NULL,
+    channels (
+      id VARCHAR(255) NOT NULL,
       title VARCHAR (255) NOT NULL,
-      description VARCHAR(255) NOT NULL,
-      image_url VARCHAR(255) NOT NULL
-
+      url VARCHAR(255) NOT NULL,
+      PRIMARY KEY (id)
     );`
   )
-    .then(loadChannel)
+    .then(loadChannels)
     .catch(console.error);
 
   client.query(`
     CREATE TABLE IF NOT EXISTS
     playlists (
-      playlists_id SERIAL PRIMARY KEY,
+      id VARCHAR(255) NOT NULL,
       channel_id VARCHAR(255) NOT NULL,
-      topic VARCHAR(255) NOT NULL,
-      category VARCHAR(255) NOT NULL
+      title VARCHAR(255) NOT NULL,
+      description VARCHAR(800),
+      url VARCHAR(255) NOT NULL,
+      tags VARCHAR(255) NOT NULL,
+      FOREIGN KEY (channel_id) REFERENCES channels(id)
     );`
   )
+    .then(loadPlaylists)
     .catch(console.error);
 }
 
 loadDB();
-
-/**
- * ENDPOINTS
- */
-
-//testing request
-app.get('/test', (req, res) => res.send('hello world'))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Catch Request
-app.get('*', (req, res) => res.status(403).send('Whoops...'));
-
-
-/**
- * LISTENER
- */
-app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
