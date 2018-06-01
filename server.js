@@ -79,6 +79,65 @@ app.get('/api/v1/playlists/:id', (req, res) => {
     .catch(console.error)
 });
 
+app.post('/api/v1/addNew/:id', express.urlencoded(), (req, res) => {
+  let url = 'https://www.googleapis.com/youtube/v3/playlists';
+  superagent.get(url)
+    .query({'key': API_KEY})
+    .query({'part': 'snippet'})
+    .query({'id': req.params.id})
+
+    .then(firstResponse => {
+      var firstData = firstResponse.body.items[0].snippet;
+      var youtubeChannelId = firstData.channelId;
+      let url = 'https://www.googleapis.com/youtube/v3/channels';
+      superagent.get(url)
+        .query({'key': API_KEY})
+        .query({'part': 'snippet'})
+        .query({'id': youtubeChannelId})
+
+        .then(secondResponse => {
+          var secondData = secondResponse.body.items[0].snippet;
+          let SQL = `INSERT INTO channels(id, title, url)
+                    VALUES($1, $2, $3) ON CONFLICT DO NOTHING;`;
+          let values = [youtubeChannelId, secondData.title, secondData.thumbnails.medium.url];
+          client.query(SQL, values)
+            .then(console.log('New channel Added'))
+            .catch(console.error);
+        })
+        .then(() => {
+          let SQL = `INSERT INTO playlists(id, channel_id, title, description, url, tags)
+                    VALUES($1, $2, $3, $4, $5, $6) ON CONFLICT DO NOTHING;`;
+          let values = [req.params.id, firstData.channelId, firstData.title, firstData.description, firstData.thumbnails.medium.url, ','];
+          client.query(SQL, values)
+            .then(console.log('New Playlist Added'))
+            .catch(console.error)
+        })
+    })
+    .catch(console.error);
+});
+
+app.delete('/api/v1/delete/:id', (req, res) => {
+  let SQL = `DELETE
+            FROM playlists
+            WHERE playlists.id=$1`
+  let values = [req.params.id];
+  client.query(SQL, values)
+    .then(() => {
+      console.log('Playlist Removed')
+      let SQL = `DELETE FROM channels
+                WHERE channels.id IN
+                (SELECT channels.id
+                FROM channels
+                LEFT JOIN playlists
+                ON channels.id=playlists.channel_id
+                WHERE playlists.id IS NULL);`;
+      client.query(SQL)
+        .then(console.log('Channel Removed'))
+        .catch(console.error);
+    })
+    .catch(console.error);
+});
+
 
 //Catch Request
 app.get('*', (req, res) => res.status(403).send('Whoops...'));
