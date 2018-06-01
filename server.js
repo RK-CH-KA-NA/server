@@ -94,15 +94,16 @@ app.post('/api/v1/addNew/:id', (req, res) => {
                     VALUES($1, $2, $3) ON CONFLICT DO NOTHING;`;
           let values = [youtubeChannelId, secondData.title, secondData.thumbnails.medium.url];
           client.query(SQL, values)
-            .then(response => res.sendStatus(201))
+            .then(() => res.sendStatus(201))
             .catch(console.error);
         })
         .then(() => {
-          let SQL = `INSERT INTO playlists(id, channel_id, title, description, url, tags)
-                    VALUES($1, $2, $3, $4, $5, $6) ON CONFLICT DO NOTHING;`;
+          let SQL =`INSERT INTO playlists(id, channel_id, title, description, url, tags)
+                      VALUES($1, $2, $3, $4, $5, $6)`;
+
           let values = [req.params.id, firstData.channelId, firstData.title, firstData.description, firstData.thumbnails.medium.url, ','];
           client.query(SQL, values)
-            .then(response => res.sendStatus(201))
+            .then(() => res.sendStatus(201))
             .catch(console.error)
         })
     })
@@ -125,7 +126,7 @@ app.delete('/api/v1/delete/:id', (req, res) => {
                 ON channels.id=playlists.channel_id
                 WHERE playlists.id IS NULL);`;
       client.query(SQL)
-        .then(response = res.sendStatus(200))
+        .then(() => res.sendStatus(200))
         .catch(console.error);
     })
     .catch(console.error);
