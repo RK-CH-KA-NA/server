@@ -72,7 +72,7 @@ app.get('/api/v1/playlists/:id', (req, res) => {
     .catch(console.error)
 });
 
-app.post('/api/v1/addNew/:id', express.urlencoded(), (req, res) => {
+app.post('/api/v1/addNew/:id', (req, res) => {
   let url = 'https://www.googleapis.com/youtube/v3/playlists';
   superagent.get(url)
     .query({'key': API_KEY})
@@ -94,7 +94,7 @@ app.post('/api/v1/addNew/:id', express.urlencoded(), (req, res) => {
                     VALUES($1, $2, $3) ON CONFLICT DO NOTHING;`;
           let values = [youtubeChannelId, secondData.title, secondData.thumbnails.medium.url];
           client.query(SQL, values)
-            .then(console.log('New channel Added'))
+            .then(response => res.sendStatus(201))
             .catch(console.error);
         })
         .then(() => {
@@ -102,7 +102,7 @@ app.post('/api/v1/addNew/:id', express.urlencoded(), (req, res) => {
                     VALUES($1, $2, $3, $4, $5, $6) ON CONFLICT DO NOTHING;`;
           let values = [req.params.id, firstData.channelId, firstData.title, firstData.description, firstData.thumbnails.medium.url, ','];
           client.query(SQL, values)
-            .then(console.log('New Playlist Added'))
+            .then(response => res.sendStatus(201))
             .catch(console.error)
         })
     })
@@ -125,7 +125,7 @@ app.delete('/api/v1/delete/:id', (req, res) => {
                 ON channels.id=playlists.channel_id
                 WHERE playlists.id IS NULL);`;
       client.query(SQL)
-        .then(console.log('Channel Removed'))
+        .then(response = res.sendStatus(200))
         .catch(console.error);
     })
     .catch(console.error);
