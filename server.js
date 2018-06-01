@@ -140,5 +140,7 @@ function loadDB() {
     .then(loadPlaylists)
     .catch(console.error);
 }
+app.get('*', (req, res) => res.status(403).send('Oops looks like you are in the wrong place'));
+
 
 loadDB();
